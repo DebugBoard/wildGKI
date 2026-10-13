@@ -207,7 +207,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: rec-helper-${{ steps.final.outputs.version_slug }}-${{ inputs.root_flavor }}-generate-matrix
-          path: /tmp/digest_rec/rec-helper-${{ steps.final.outputs.version_slug }}-${{ inputs.root_flavor }}-generate-matrix.json
+          path: /tmp/digest_rec/rec-helper-build-${{ steps.final.outputs.version_slug }}-${{ inputs.root_flavor }}-generate-matrix.json
           if-no-files-found: error
           compression-level: 0
 
@@ -380,7 +380,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: rec-helper-${{ steps.prep.outputs.version_slug }}-${{ inputs.root_flavor }}-stock-configs
-          path: /tmp/digest_rec/rec-helper-${{ steps.prep.outputs.version_slug }}-${{ inputs.root_flavor }}-stock-configs.json
+          path: /tmp/digest_rec/rec-helper-build-${{ steps.prep.outputs.version_slug }}-${{ inputs.root_flavor }}-stock-configs.json
           if-no-files-found: error
           compression-level: 0
 
